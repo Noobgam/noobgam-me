@@ -1,6 +1,7 @@
 .Background {
     background-color: #282c34;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -9,5 +10,10 @@
 .Header {
     background-color: #282c34;
     display: flex;
+    justify-content: center;
+}
 
+.Header-Button {
+    background-color: #282c34;
+    padding: 5px;
 }

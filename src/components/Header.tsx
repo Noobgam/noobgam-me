@@ -7,12 +7,12 @@ export const Header = () => {
     return (
         <nav>
             <Heading className={'Header'}>
-                <NavLink to="">
+                <NavLink className={'Header-Button'} to="">
                     <Text color={"tomato"}>
                         Home
                     </Text>
                 </NavLink>
-                <NavLink to="playground">
+                <NavLink className={'Header-Button'} to="playground">
                     <Text color={"tomato"}>
                         Playground
                     </Text>

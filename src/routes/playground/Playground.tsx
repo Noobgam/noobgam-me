@@ -10,16 +10,13 @@ function Playground() {
         "id": "c2hlc3NtYXN0ZXIxMkBnbWFpbC5jb20",
         "color": ColorsThatWorkInGoogleCalendar.red,
     }, {
-        "id": "ZjMxMTY1MzY4NTg0YjFkNTVlNjJjNGU2OWVmM2M5OGUzZmY1YTdjZTdkM2I0MmUyMWI4MWYwZjNhYWIxOWYyYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t",
-        "color": ColorsThatWorkInGoogleCalendar.orange,
-    }, {
         "id": "MzlvdXZjMzVnb2d1cDA3ZWYydjNrZG90OHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
         "color": ColorsThatWorkInGoogleCalendar.green,
     }, {
         "id": "Yzh2amYzOTVwOXA5NGgzbGNuN2s4aDg2Zm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
         "color": ColorsThatWorkInGoogleCalendar.darkBlue,
     }, {
-        "id": "Ymh1ajhuYzd2ZGEzMDI3dGg5MHZjbWdqaG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+        "id": "ZDg3ODczOWE1YzI4MTYyMDA1MmQ3NzVlZmI0NzM5ZjllMjVhM2ViYTdmMWNjZmZmZjJjNTdlYWIxZWJiZDg1Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t",
         "color": ColorsThatWorkInGoogleCalendar.orange,
     }, {
         "id": "bm9vYmdhbS5kdW1teS5lbWFpbEBnbWFpbC5jb20",
@@ -39,9 +36,9 @@ function Playground() {
                     />
                 </div>
                 <div>
-                    <span>
+                    <Text color={"tomato"}>
                         My schedule
-                    </span>
+                    </Text>
                     <GoogleCalendar
                         height={600}
                         bgColor={"#aaaaaa"}
