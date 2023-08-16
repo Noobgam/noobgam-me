@@ -1,0 +1,30 @@
+name: NodeJS with Webpack
+
+on:
+  push:
+    branches:
+      - stable
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: Install
+        run: yarn install
+      - name: Build
+        run: yarn build
+      - name: Publish to S3
+        run: |
+          yarn sync-bucket-staging
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'eu-central-1'
