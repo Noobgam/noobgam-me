@@ -26,7 +26,7 @@ function Playground() {
         <div className="Background">
             <div style={{flex: 1, flexDirection: "column"}}>
                 <div style={{flex: 1}}>
-                    <Text color={"tomato"}>
+                    <Text align={'center'} color={"tomato"}>
                         What am I up to?
                     </Text>
                     <iframe
@@ -36,7 +36,7 @@ function Playground() {
                     />
                 </div>
                 <div>
-                    <Text color={"tomato"}>
+                    <Text align={'center'} color={"tomato"}>
                         My schedule
                     </Text>
                     <GoogleCalendar
