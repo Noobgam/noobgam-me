@@ -5,7 +5,7 @@ import React from "react";
 export default function Home() {
     return (
         <div className="Background">
-            <Link to={"/playground"}>
+            <Link to={"/"}>
                 <Text color={"tomato"}>
                     Home
                 </Text>
