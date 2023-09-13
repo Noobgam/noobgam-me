@@ -1,11 +1,33 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import '../../styles/Common.css'
 import { Text } from '@chakra-ui/react'
 import {ColorsThatWorkInGoogleCalendar, GoogleCalendar, SourceCalendar} from "../../components/GoogleCalendar";
+import {getAllAnkiReviews} from "../../data/fetchers/clickhouse";
+import {ReviewedCard} from "../../data/models/anki";
+import {AbstractGraph} from "../../components/AbstractGraph";
+import {type} from "os";
 
 
 
 function Playground() {
+    // todo query
+    const [ankiReviews, setAnkiReviews] = useState<Record<string, number>>()
+    useEffect(() => {
+        getAllAnkiReviews().then(
+            r => {
+                const aggregated = r.reduce((res: any, reviewedCard: ReviewedCard) => {
+                    const d = new Date(parseInt(reviewedCard.reviewTime as any as string, 10)).toDateString();
+                    if (!res[d]) {
+                        res[d] = 0;
+                    }
+                    res[d] += 1;
+                    return res;
+                }, {})
+                setAnkiReviews(aggregated)
+            }
+        )
+    }, []);
+    console.log(`Anki reviews ${JSON.stringify(ankiReviews)}`);
     const mapHere: SourceCalendar[] = [{
         "id": "c2hlc3NtYXN0ZXIxMkBnbWFpbC5jb20",
         "color": ColorsThatWorkInGoogleCalendar.red,
@@ -25,6 +47,18 @@ function Playground() {
     return (
         <div className="Background">
             <div style={{flex: 1, flexDirection: "column"}}>
+                <div style={{width: '800px', height: '800px'}}>
+                    {ankiReviews && (<Text>Anki reviews should be there...</Text>)}
+                    {ankiReviews && (<AbstractGraph data={[{
+                        id: "test-serie",
+                        data: Object.entries(ankiReviews).map(([date, num]) => {
+                            return {
+                                x: date,
+                                y: num,
+                            }
+                        })
+                    }]}/>)}
+                </div>
                 <div style={{flex: 1}}>
                     <Text align={'center'} color={"tomato"}>
                         What am I up to?
