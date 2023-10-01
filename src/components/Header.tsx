@@ -12,11 +12,16 @@ export const Header = () => {
                         Home
                     </Text>
                 </NavLink>
-                <NavLink className={'Header-Button'} to="playground">
+                <NavLink className={'Header-Button'} to="/about">
                     <Text color={"tomato"}>
-                        Playground
+                        About
                     </Text>
                 </NavLink>
+                {/*<NavLink className={'Header-Button'} to="playground">*/}
+                {/*    <Text color={"tomato"}>*/}
+                {/*        Playground*/}
+                {/*    </Text>*/}
+                {/*</NavLink>*/}
             </Heading>
         </nav>
     );
