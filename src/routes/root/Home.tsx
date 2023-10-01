@@ -7,7 +7,7 @@ export default function Home() {
         <div className="Background">
             <Link to={"/"}>
                 <Text color={"tomato"}>
-                    Home
+                    Hi, I'm Noob
                 </Text>
             </Link>
         </div>

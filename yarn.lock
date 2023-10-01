@@ -8537,9 +8537,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^10.15.0":
-  version: 10.15.0
-  resolution: "framer-motion@npm:10.15.0"
+"framer-motion@npm:^10.16.4":
+  version: 10.16.4
+  resolution: "framer-motion@npm:10.16.4"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     tslib: ^2.4.0
@@ -8554,7 +8554,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 29f9d4368d7ed8f14e4f4a1979d2071b5745a1575bcf96120f3a4c2ac400a7bec8755139f9439ab19e0fc1225568af1270a88443e75d91bfbe71e21681ce5a88
+  checksum: 57eb252f25a2c4ee14b024295c6a1162a53a05e0321bdb9c8a22ec266fbe777832823eaa0309e42854170fcde16c42915c6c5d0208b628fd000d6fab013c501f
   languageName: node
   linkType: hard
 
@@ -11893,7 +11893,7 @@ __metadata:
     "@types/node": ^16.18.39
     "@types/react": ^18.2.17
     "@types/react-dom": ^18.2.7
-    framer-motion: ^10.15.0
+    framer-motion: ^10.16.4
     react: ^18.2.0
     react-dom: ^18.2.0
     react-markdown: ^8.0.7
