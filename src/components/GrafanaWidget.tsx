@@ -1,6 +1,7 @@
 import {FC} from "react";
 
 type GrafanaWidgetProps = {
+    title: string;
     dashboardId?: string;
     panelId: number;
 
@@ -12,7 +13,7 @@ type GrafanaWidgetProps = {
 const baseUrl = "https://grafana.noobgam.com/d-solo";
 const defaultDashboardId = "ce95cd2d-acf6-4682-a8a1-df42e8a73a76";
 
-export const GrafanaWidget: FC<GrafanaWidgetProps> = ({dashboardId, panelId, width, height, from}) => {
+export const GrafanaWidget: FC<GrafanaWidgetProps> = ({dashboardId, panelId, width, height, from, title}) => {
     const dashboard = dashboardId ?? defaultDashboardId;
 
     let iframeSrc = `${baseUrl}/${dashboard}?orgId=1&theme=dark&panelId=${panelId}`
@@ -21,6 +22,7 @@ export const GrafanaWidget: FC<GrafanaWidgetProps> = ({dashboardId, panelId, wid
     }
     return (
         <iframe
+            title={title}
             style={{border: '1px'}}
             src={iframeSrc}
             {...(width ? {width} : {})}
