@@ -1,9 +1,9 @@
 import React, {FC} from "react";
 import {Text} from "@chakra-ui/react"
 
-export const Languages: FC<{}> = () => {
+export const GenericLanguageSection: FC<{}> = () => {
     return (
-        <Text color={"tomato"}>
+        <Text color={"wheat"}>
             I like learning languages. <br/>
             Right now I am at the point in life where I have to learn 3rd language.<br/>
             Currently my aspiration is to be fluent in all four eventually:<br/>
