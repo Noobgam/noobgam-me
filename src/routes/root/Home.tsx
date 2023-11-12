@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import {Text} from "@chakra-ui/react";
 import React from "react";
+import {transition} from "../../utils/transition";
 
-export default function Home() {
+function HomeRoute() {
     return (
         <div className="Background">
             <Link to={"/"}>
@@ -13,3 +14,5 @@ export default function Home() {
         </div>
     );
 }
+
+export const Home = transition(HomeRoute);
