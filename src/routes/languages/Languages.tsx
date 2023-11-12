@@ -18,10 +18,10 @@ const LanguagesRoute: FC<{}> = () => {
                     </Text>
                     <div style={{display: 'flex', flexDirection: 'row'}}>
                         <div style={{flex: 1, width: 'fit-content'}}>
-                            <GrafanaWidget panelId={6} width={600} height={300}/>
+                            <GrafanaWidget title={'anki-stats'} panelId={6} width={600} height={300}/>
                         </div>
                         <div style={{flex: 1, width: 'fit-content'}}>
-                            <GrafanaWidget panelId={5} width={600} height={300}/>
+                            <GrafanaWidget title={'wanikani-stats'} panelId={5} width={600} height={300}/>
                         </div>
                     </div>
                 </Section>
