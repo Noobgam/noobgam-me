@@ -11,9 +11,9 @@ export const Router: FC<{}> = () => {
     return (
         <AnimatePresence mode={"wait"}>
             <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/about" element={<About/>}/>
-                <Route path="/languages" element={<Languages/>}/>
+                {<Route path="/" element={<Home/>}/>}
+                {/*<Route path="/about" element={<About/>}/>*/}
+                {/*<Route path="/languages" element={<Languages/>}/>*/}
             </Routes>
         </AnimatePresence>
     )

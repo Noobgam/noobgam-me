@@ -60,7 +60,7 @@ function Playground() {
                     }]}/>)}
                 </div>
                 <div style={{flex: 1}}>
-                    <Text align={'center'} color={"tomato"}>
+                    <Text textAlign={'center'} color={"tomato"}>
                         What am I up to?
                     </Text>
                     <iframe
@@ -70,7 +70,7 @@ function Playground() {
                     />
                 </div>
                 <div>
-                    <Text align={'center'} color={"tomato"}>
+                    <Text textAlign={'center'} color={"tomato"}>
                         My schedule
                     </Text>
                     <GoogleCalendar

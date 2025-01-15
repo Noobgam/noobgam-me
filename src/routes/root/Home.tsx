@@ -8,7 +8,8 @@ function HomeRoute() {
         <div className="Background">
             <Link to={"/"}>
                 <Text color={"tomato"}>
-                    Hi, I'm Noob
+                    <p>Hi, I'm Noob.</p>
+                    <p>And this is under construction</p>
                 </Text>
             </Link>
         </div>
