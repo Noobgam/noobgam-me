@@ -1,28 +1,56 @@
-import React from "react";
-import {Heading, Text} from "@chakra-ui/react";
-import {NavLink} from "react-router-dom";
-import '../styles/Common.css'
+'use client';
 
-export const Header = () => {
+import {Flex, Heading, Button} from "@chakra-ui/react";
+import { FiSun, FiMoon } from "react-icons/fi";
+import { useColorMode } from "@/components/ui/color-mode";
+
+export default function Header() {
+    const { colorMode, toggleColorMode } = useColorMode();
+
     return (
-        <nav>
-            <Heading className={'Header'}>
-                <NavLink className={'Header-Button'} to="">
-                    <Text color={"tomato"}>
-                        Home
-                    </Text>
-                </NavLink>
-                {/*<NavLink className={'Header-Button'} to="/languages">*/}
-                {/*    <Text color={"tomato"}>*/}
-                {/*        Languages*/}
-                {/*    </Text>*/}
-                {/*</NavLink>*/}
-                {/*<NavLink className={'Header-Button'} to="/about">*/}
-                {/*    <Text color={"tomato"}>*/}
-                {/*        About*/}
-                {/*    </Text>*/}
-                {/*</NavLink>*/}
+        <Flex
+            as="header"
+            align="center"
+            justify="center"
+            position="relative"
+            bg="gray.50"
+            py="4"
+            borderBottom="1px"
+            borderColor="gray.200"
+        >
+            {/* Leftmost Brand */}
+            <Heading
+                as="h1"
+                size="lg"
+                position="absolute"
+                left="1rem"
+                color="gray.800"
+            >
+                Noobgam
             </Heading>
-        </nav>
+
+            {/* Centered Header Title */}
+            <Heading
+                as="h2"
+                size="md"
+                color="gray.700"
+            >
+                Welcome to My Site
+            </Heading>
+
+            {/* Dark/Light Mode Toggle */}
+            <Button
+                aria-label="Toggle dark mode"
+                onClick={toggleColorMode}
+                position="absolute"
+                right="1rem"
+                variant="outline"
+                _hover={{
+                    bg: 'gray.400',
+                }}
+            >
+                {colorMode === "light" ? <FiMoon /> : <FiSun />}
+            </Button>
+        </Flex>
     );
 }
