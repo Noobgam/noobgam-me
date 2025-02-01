@@ -11826,12 +11826,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "noobgam_me@workspace:."
   dependencies:
+    "@babel/core": "npm:^7.16.0"
     "@chakra-ui/react": "npm:^3.5.1"
     "@clickhouse/client-web": "npm:^1.10.1"
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.0"
     "@nivo/core": "npm:^0.88.0"
     "@nivo/line": "npm:^0.88.0"
+    "@pmmmwh/react-refresh-webpack-plugin": "npm:^0.5.3"
+    "@svgr/webpack": "npm:^5.5.0"
     "@testing-library/jest-dom": "npm:^6.6.3"
     "@testing-library/react": "npm:^16.2.0"
     "@testing-library/user-event": "npm:^14.6.1"
@@ -11840,17 +11843,60 @@ __metadata:
     "@types/react": "npm:^19.0.8"
     "@types/react-dom": "npm:^19.0.3"
     "@typescript-eslint/typescript-estree": "npm:^8.22.0"
+    babel-jest: "npm:^27.4.2"
+    babel-loader: "npm:^8.2.3"
+    babel-plugin-named-asset-import: "npm:^0.3.8"
+    babel-preset-react-app: "npm:^10.0.1"
+    bfj: "npm:^7.0.2"
+    browserslist: "npm:^4.18.1"
+    camelcase: "npm:^6.2.1"
+    case-sensitive-paths-webpack-plugin: "npm:^2.4.0"
+    css-loader: "npm:^6.5.1"
+    css-minimizer-webpack-plugin: "npm:^3.2.0"
+    dotenv: "npm:^10.0.0"
+    dotenv-expand: "npm:^5.1.0"
+    eslint: "npm:^8.3.0"
+    eslint-config-react-app: "npm:^7.0.1"
+    eslint-webpack-plugin: "npm:^3.1.1"
+    file-loader: "npm:^6.2.0"
     framer-motion: "npm:^12.0.6"
+    fs-extra: "npm:^10.0.0"
+    html-webpack-plugin: "npm:^5.5.0"
+    identity-obj-proxy: "npm:^3.0.0"
+    jest: "npm:^27.4.3"
+    jest-resolve: "npm:^27.4.2"
+    jest-watch-typeahead: "npm:^1.0.0"
+    mini-css-extract-plugin: "npm:^2.4.5"
     next: "npm:^15.1.6"
     next-themes: "npm:^0.4.4"
+    postcss: "npm:^8.4.4"
+    postcss-flexbugs-fixes: "npm:^5.0.2"
+    postcss-loader: "npm:^6.2.1"
+    postcss-normalize: "npm:^10.0.1"
+    postcss-preset-env: "npm:^7.0.1"
+    prompts: "npm:^2.4.2"
     react: "npm:^19.0.0"
+    react-app-polyfill: "npm:^3.0.0"
+    react-dev-utils: "npm:^12.0.1"
     react-dom: "npm:^19.0.0"
     react-icons: "npm:^5.4.0"
     react-markdown: "npm:^9.0.3"
+    react-refresh: "npm:^0.11.0"
     react-router-dom: "npm:^7.1.5"
-    react-scripts: "npm:5.0.1"
     remark-gfm: "npm:^4.0.0"
+    resolve: "npm:^1.20.0"
+    resolve-url-loader: "npm:^4.0.0"
+    sass-loader: "npm:^12.3.0"
+    semver: "npm:^7.3.5"
+    source-map-loader: "npm:^3.0.0"
+    style-loader: "npm:^3.3.1"
+    tailwindcss: "npm:^3.0.2"
+    terser-webpack-plugin: "npm:^5.2.5"
     typescript: "npm:^5.7.3"
+    webpack: "npm:^5.64.4"
+    webpack-dev-server: "npm:^4.6.0"
+    webpack-manifest-plugin: "npm:^4.0.2"
+    workbox-webpack-plugin: "npm:^6.4.1"
   languageName: unknown
   linkType: soft
 
@@ -13578,73 +13624,6 @@ __metadata:
     react-dom:
       optional: true
   checksum: 10c0/c0013102c7a02d26cd2353fa3749bd229fbcfedd291710540be1765d703861f96a34ef0114dd5ee8d9a728e87f3a5698387058f9539b39604f331505f507d912
-  languageName: node
-  linkType: hard
-
-"react-scripts@npm:5.0.1":
-  version: 5.0.1
-  resolution: "react-scripts@npm:5.0.1"
-  dependencies:
-    "@babel/core": "npm:^7.16.0"
-    "@pmmmwh/react-refresh-webpack-plugin": "npm:^0.5.3"
-    "@svgr/webpack": "npm:^5.5.0"
-    babel-jest: "npm:^27.4.2"
-    babel-loader: "npm:^8.2.3"
-    babel-plugin-named-asset-import: "npm:^0.3.8"
-    babel-preset-react-app: "npm:^10.0.1"
-    bfj: "npm:^7.0.2"
-    browserslist: "npm:^4.18.1"
-    camelcase: "npm:^6.2.1"
-    case-sensitive-paths-webpack-plugin: "npm:^2.4.0"
-    css-loader: "npm:^6.5.1"
-    css-minimizer-webpack-plugin: "npm:^3.2.0"
-    dotenv: "npm:^10.0.0"
-    dotenv-expand: "npm:^5.1.0"
-    eslint: "npm:^8.3.0"
-    eslint-config-react-app: "npm:^7.0.1"
-    eslint-webpack-plugin: "npm:^3.1.1"
-    file-loader: "npm:^6.2.0"
-    fs-extra: "npm:^10.0.0"
-    fsevents: "npm:^2.3.2"
-    html-webpack-plugin: "npm:^5.5.0"
-    identity-obj-proxy: "npm:^3.0.0"
-    jest: "npm:^27.4.3"
-    jest-resolve: "npm:^27.4.2"
-    jest-watch-typeahead: "npm:^1.0.0"
-    mini-css-extract-plugin: "npm:^2.4.5"
-    postcss: "npm:^8.4.4"
-    postcss-flexbugs-fixes: "npm:^5.0.2"
-    postcss-loader: "npm:^6.2.1"
-    postcss-normalize: "npm:^10.0.1"
-    postcss-preset-env: "npm:^7.0.1"
-    prompts: "npm:^2.4.2"
-    react-app-polyfill: "npm:^3.0.0"
-    react-dev-utils: "npm:^12.0.1"
-    react-refresh: "npm:^0.11.0"
-    resolve: "npm:^1.20.0"
-    resolve-url-loader: "npm:^4.0.0"
-    sass-loader: "npm:^12.3.0"
-    semver: "npm:^7.3.5"
-    source-map-loader: "npm:^3.0.0"
-    style-loader: "npm:^3.3.1"
-    tailwindcss: "npm:^3.0.2"
-    terser-webpack-plugin: "npm:^5.2.5"
-    webpack: "npm:^5.64.4"
-    webpack-dev-server: "npm:^4.6.0"
-    webpack-manifest-plugin: "npm:^4.0.2"
-    workbox-webpack-plugin: "npm:^6.4.1"
-  peerDependencies:
-    react: ">= 16"
-    typescript: ^3.2.1 || ^4
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  bin:
-    react-scripts: bin/react-scripts.js
-  checksum: 10c0/1776e7139261019eb4a2adece8fb997913040c6b4e9170902ffed95c3ff311ded623189bb1582ecddb3a5a15d6afd871fb68dbed72080d50f635e31c4ff5fff5
   languageName: node
   linkType: hard
 
