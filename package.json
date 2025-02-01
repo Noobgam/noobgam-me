@@ -26,6 +26,9 @@
     "eslint": "^9.19.0",
     "typescript": "^5.7.3"
   },
+  "resolutions": {
+    "typescript": "patch:typescript@npm:5.7.3#optional!builtin<compat/typescript>::version=5.7.3&hash=5786d5"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
