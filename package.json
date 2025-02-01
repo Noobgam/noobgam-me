@@ -24,10 +24,7 @@
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "eslint": "^9.19.0",
-    "typescript": "^5.7.3"
-  },
-  "resolutions": {
-    "typescript": "patch:typescript@npm:5.7.3#optional!builtin<compat/typescript>::version=5.7.3&hash=5786d5"
+    "typescript": "5.7.2"
   },
   "browserslist": {
     "production": [
